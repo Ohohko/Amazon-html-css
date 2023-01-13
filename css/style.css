@@ -1,7 +1,76 @@
-
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 200;
+  src: url(https://m.media-amazon.com/images/S/sash/Dv1WQ5DdeMS5qP7.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/e0LnMbFWJC-TMQz.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 200;
+  font-style: italic;
+  src: url(https://m.media-amazon.com/images/S/sash/ozb5-CLHQWI6Soc.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/twzZHebXjCHBb6v.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  src: url(https://m.media-amazon.com/images/S/sash/pDxWAF1pBB0dzGB.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/kfKKBuoqcD$AUKL.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-style: italic;
+  src: url(https://m.media-amazon.com/images/S/sash/WOnTLzkiaEccV7F.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/JJsp0ZvgpfwzJM6.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 500;
+  src: url(https://m.media-amazon.com/images/S/sash/VjTR4RqBzY0mUYx.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/XIvhNCZAsrT80Wz.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 500;
+  font-style: italic;
+  src: url(https://m.media-amazon.com/images/S/sash/KwhNPG8Jz-Vz2X7.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/YAEPfuhs1l-argd.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-weight: 700;
+  src: url(https://m.media-amazon.com/images/S/sash/KFPk-9IF4FqAqY-.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/mzVbGSgvdBfRLX9.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Amazon Ember";
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://m.media-amazon.com/images/S/sash/2SazJx$EeTHfhMN.woff2)
+      format("woff2"),
+    url(https://m.media-amazon.com/images/S/sash/CjbL$jCCegyfqZ7.woff)
+      format("woff");
+}
+body {
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,10 +86,17 @@ html {
     text-align: center;
 }
 
+.logo{
+max-width:150px;
+position: absolute;
+}
+
 .navbar-container {
-    height: 10vh;
-    width: 90%;
-    border: 2px solid black;
+    position: absolute;
+    top:0;
+    height: 8vh;
+    width: 100%;
+    background-color:#121921;
 
 }
 
@@ -36,11 +112,50 @@ html {
 .main-container div {
     width: 30%;
     height: 100%;
-    border: 2px solid black;
 }
 .container-bought-together,
 .container-explore {
     height: 10vh;
     width: 90%;
-    border: 2px solid black;
+}
+.left-grid-inner{
+    padding-left: 40px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  
+  .gallery {
+    display: flex;
+    margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+    padding-top: 66.6666666667%;
+  }
+  .gallery__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .gallery__thumb {
+    padding-top: 6px;
+    margin: 6px;
+    display: block;
+  }
+  .gallery__selector {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .gallery__selector:checked + .gallery__img {
+    opacity: 1;
+  }
+  .gallery__selector:checked ~ .gallery__thumb > img {
+    box-shadow: 0 0 0 3px #f4fafa;
+  }
+  @media screen and (min-width: 600px) {
 }
