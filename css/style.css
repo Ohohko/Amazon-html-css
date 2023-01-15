@@ -279,7 +279,6 @@ header #subNav ul li .menu-all{
 
 }
 header #subNav ul li a .bars-sprite{
-  background: url('../../assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -172px -255px;
 width: 17px;
 height: 14px;
   display: inline-block;
@@ -419,13 +418,11 @@ line-height: 1.7;
 
 
 #main-product .mainCenter .sprites .stars{
-    background: url('../../assets/images/3-fm1Jbg4IHlyhq.png')  no-repeat -84px -28px;
 	width: 80px;
 	height: 15px;
     display: inline-block;
 }
 #main-product .mainCenter .sprites .arrow-down{
-    background: url('../../assets/images/McBZv0ZvnbehkIx.png')  no-repeat -90px -5px;
     display: inline-block;
     margin: 5px 0 0 0.385em;
     vertical-align: text-top;
@@ -605,7 +602,6 @@ padding-right: 10px;
 }
 .mainRight .wrap-center i{
   display: inline-block;
-  background: url('../../assets/images/McBZv0ZvnbehkIx.png') no-repeat -5px -35px;
 width: 11px;
 height: 15px;
  align-self: start;
