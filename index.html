@@ -1,73 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Amazon </title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="/js/app.js"></script>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://kit.fontawesome.com/61b6f65dd9.js" crossorigin="anonymous"></script>
+    <title>Amazon.com:Corsair RMx Series (2021), RM850x, 850 Watt, GOLD, Fully Modular Power Supply (CP-9020200-NA)</title>
   </head>
-<body>
-    <div class="navbar-container">
-       <nav class="navbar">
-            <div class="logo">
-              <img src="/images/logoamazon.jpg" alt="logo">
+  <body>
+    <header>
+      <nav id="mainNav">
+        <ul>
+          <li class="logo-wrap">
+            <a href="#" class="logo"></a>
+            <img src="/images/logoamazon.jpg" alt="">
+          </li>
+          <li class="flex-col">
+            <a href="#"
+              ><span class="nav-small-text">Deliver to</span>
+              <i class="fas fa-map-marker-alt"></i>
+              Israel</a
+            >
+          </li>
+          <li class="search-nav flex-row flex-row-c-c">
+            <select name="" id="">
+              <option value="All">All</option>
+              <option value="Arts & Crafts">Arts & Crafts</option>
+              <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+              <option value="Auto">AUTO</option>
+              <option value="Baby">Baby</option>
+              <option value="">...</option>
+              <option value="">...</option>
+              <option value="">...</option>
+              <option value="">.....</option>
+              <option value="">....</option>
+              <option value="">....</option>
+
+            </select>
+            <input type="text" />
+            <div class="search-btn flex-row flex-row-c-c">
+              <i class="fas fa-search"></i>
             </div>
-            <div class="dropdown">
-              <button class="dropbtn" onclick="myFunction()">Dropdown
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+          </li>
+
+          <li>
+            <a href="#"><img src="./images/eu.svg"alt="eu"width="24px"height="24px"/>
+            </a>
+          </li>
+          <li>
+            <a href="#"><span class="nav-small-text">Hello, Sign in</span>
+              Account & Lists
+            </a>
+          </li>
+          <li>
+            <a href="#"><span class="nav-small-text">Return</span>& Orders </a>
+          </li>
+          <li>
+            <a href="#" class="cart-logo-wrap">
+              <div>Cart</div></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav id="subNav">
+        <ul class="flex-row">
+          <li>
+            <a href="#" class="menu-all">
+              <i class="bars-sprite"></i>
+              <span>All</span>
+            </a>
+          </li>
+          <li><a href="#">Today's Deals</a></li>
+          <li><a href="#">Buy Again</a></li>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Registry</a></li>
+          <li><a href="#">Sell</a></li>
+        </ul>
+      </nav>
+
+      <div id="sponsored">
+        <div class="sponsored-container flex-row flex-row-c-c">
+          <div class="imgs-box flex-row">
+            <img
+              src="/images/41WsKfqVi5L._AC_US40_.jpg"/>
+            <img
+              src="/images/516XXYcSB5S._AC_US40_.jpg">
+          </div>
+          <div class="product-title">
+            <p>Corsair RM1000e Fully Modular Low-Noise ATX Power Supply (Dual EPS12V Connectors, Low-Noise,<br> 105°C-Rated Capacitors, 80 PLUS Gold-Certified Efficiency, Modern Standby Support) Black.
+            </p>
+          </div>
+          <div class="rating-price-wrap flex-col">
+            <div class="product-details flex-row">
+              <div class="rating">
+                <img src="https://m.media-amazon.com/images/G/01/perc/star-fullfill.svg"alt="full-star"/>
+                <img src="https://m.media-amazon.com/images/G/01/perc/star-fullfill.svg"alt="full-star"/>
+                <img src="https://m.media-amazon.com/images/G/01/perc/star-fullfill.svg"alt="full-star"/>
+                <img src="https://m.media-amazon.com/images/G/01/perc/star-fullfill.svg"alt="full-star"/>
               </div>
-              </div> 
-</div>
-      
-       </nav>
-    </div>
-
-    <div class="main-container">
-        <div class="left">
-             <section class="gallery">
-                <div class="gallery__item">
-                  <input type="radio" id="img-1" checked name="gallery" class="gallery__selector"/>
-                  <img class="gallery__img" src="https://picsum.photos/id/1015/600/400.jpg" alt=""/>
-                  <label for="img-1" class="gallery__thumb"><img src="https://picsum.photos/id/1015/150/100.jpg" alt=""/></label>
-                </div>
-                <div class="gallery__item">
-                  <input type="radio" id="img-2" name="gallery" class="gallery__selector"/>
-                  <img class="gallery__img" src="https://picsum.photos/id/1039/600/400.jpg" alt=""/>
-                  <label for="img-2" class="gallery__thumb"><img src="https://picsum.photos/id/1039/150/100.jpg" alt=""/></label>
-                </div>
-                <div class="gallery__item">
-                  <input type="radio" id="img-3" name="gallery" class="gallery__selector"/>
-                  <img class="gallery__img" src="https://picsum.photos/id/1057/600/400.jpg" alt=""/>
-                  <label for="img-3" class="gallery__thumb"><img src="https://picsum.photos/id/1057/150/100.jpg" alt=""/></label>
-                </div>
-                <div class="gallery__item">
-                  <input type="radio" id="img-4" name="gallery" class="gallery__selector"/>
-                  <img class="gallery__img" src="https://picsum.photos/id/106/600/400.jpg" alt=""/>
-                  <label for="img-4" class="gallery__thumb"><img src="https://picsum.photos/id/106/150/100.jpg" alt=""/></label>
-                </div>
-              </section>
-         </div>
+              <div class="rating-count">
+                <p>1657</p>
+              </div>
+            </div>
+            <div class="price-prime flex-row">
+              <div class="price price-red">
+                <p><span class="dollar">$</span>179.99</p>
+              </div>
+              <div class="prime">
+                <img
+                  src="https://m.media-amazon.com/images/G/01/perc/prime-logo.svg"
+                  alt="amazon prime logo"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="middle"></div>
-        <div class="right"></div>
-    </div>
-    <div class="container-bought-together">
+      </div>
+    </header>
 
-    </div>
-    <div class="container-explore">
+    <main>
+      <div class="main-container">
+        <header id="breadcrumbs">
+          <ul>
+            <li><a href="#">Electronics › </a></li>
+            <li><a href="#">Electronics › </a></li>
+
+          </ul>
+        </header>
+
+        <section id="main-product">
+          <div class="mainLeft">
+            <div class="fixed flex-row">
+              <ul class="images-list flex-col">
+                <li class="img-box">
+                  <a href="#"
+                    ><img src="./images/41evEnbC68S._AC_US40_.jpg" alt=""
+                  /></a>
+                </li>
+                <li class="img-box">
+                  <a href="#"
+                    ><img src="/images/41WsKfqVi5L._AC_US40_.jpg" alt=""
+                  /></a>
+                </li>
+                <li class="img-box">
+                  <a href="#"
+                    ><img src="/images/41WsKfqVi5L._AC_US40_.jpg" alt=""
+                  /></a>
+                </li>              </ul>
+              <div class="image-displaying">
+                <img src="/images/81k55rfk1iL._AC_SX466_.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="mainCenter">
+            <div class="top-product-details">
+              <h1>
+                Corsair RMx Series (2021), RM850x, 850 Watt, GOLD, Fully Modular Power Supply (CP-9020200-NA)
+              </h1>
+              <p class="visit-store">Visit the Corsair Store</p>
+              <div class="rating-qa flex-row">
+                  <i class="stars"></i>
+                  <i class="arrow-down"></i>
+                </div>
+                <div class="rating">
+                  <p>3934 ratings <span class="line">|</span></p>
+                </div>
+                <div class="qa">191 answered questions</div>
+              </div>
+              <div class="label-choice flex-row flex-row-al-c">
+                <div class="amazon-choice-l">
+                  <span>Amazon's <span class="choice">Choice</span> </span>
+                </div>
+                <div class="store">
+                  <p>in Computer Power Supplies by Corsair</p>
+                </div>
+              </div>
+              <hr class="hr" />
+              <div class="center-product-details">
+                <p>
+                  List Price:
+                  <span><del>$149.9</del> </span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    class="reinventPrice_legalMessage_icon"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      d="M256,9C119,9,8,120.08,8,257S119,505,256,505,504,394,504,257,393,9,256,9Zm0,76.31A47.69,47.69,0,1,1,208.31,133,47.69,47.69,0,0,1,256,85.31Zm38.15,332.38a12.18,12.18,0,0,1-12.21,12H229.67a11.85,11.85,0,0,1-11.82-12V249.92a11.86,11.86,0,0,1,11.82-12h52.27a12.18,12.18,0,0,1,12.21,12Z"
+                      fill="#969696"
+                    ></path>
+                  </svg>
+                </p>
+                <p class="price-left">
+                  Price: <span class="price-red">$139.97</span>
+                </p>
+                <p class="shipping-taxes">
+                  $47.06 Shipping & Import Fees Deposit to Israel Details
+                </p>
+                <p>Size: <span class="strong-size">850W</span></p>
+                <div class="product-options flex-row">
+                  <div class="product-item"><p>139.97$</p><a href="#">550W</a></div>
+                  <div class="product-item"><a href="#">650W</a></div>
+                  <div class="product-item"><a href="#">750W</a></div>
+                  <div class="product-item"><a href="#">1000W</a></div>
+                </div>
+            
+
+                <div class="table-wrap">
+                  <table style="width: 100%">
+                    <tr>
+                      <td>Series Brand</td>
+                      <td>	RM850X</td>
+                    </tr>
+                    <tr>
+                      <td>Brand</td>
+                      <td>Corsair</td>
+                    </tr>
+                    <tr>
+                      <td>Compatible Devices</td>
+                      <td>Personal Computer</td>
+                    </tr>
+                    <tr>
+                      <td>Connector Type</td>
+                      <td>EPS</td>
+                    </tr>
+                    <tr>
+                      <td>Description</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Output Wattage	</td>
+                      <td>	850 Watts</td>
+                    </tr>
+                    <tr>
+                        <td>Form Factor	</td>
+                        <td>ATX</td>
+                      </tr>
+                  </table>
+                </div>
+                <hr class="hr" />
+              </div>
+              <div class="bottom-product-details">
+                <h2>About this item</h2>
+                <ul>
+                  <li>
+                    <p>
+                        Fully modular, so you only connect the cables that your system needs.
+                        A 135mm ML fan utilizes a magnetic levitation bearing and custom engineered rotors for high performance, low noise, and superior reliability.
+                        EPS12V connector for compatibility with modern graphics cards and motherboards.
+                        100 percent Industrial-grade, 105 degree celcius rated Japanese capacitors ensure unwavering power and reliability.
+                        Supports Modern Standby sleep mode for extremely fast wake-from-sleep times and better low-load efficiency.
+                        Zero RPM fan mode for near-silent operation at low to medium loads.
+                        Resonant LLC topology with DC-to-DC conversion provides clean, consistent power, reduces coil whine for quieter operation, and enables use of more energy efficient sleep states.
+                        Ten-year warranty for complete peace of mind.
+                           Report incorrect product information.
+                        Note: Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing.
+                    </p>
+                  </li>
+     
+                </ul>
+                <div class="compare-others-new">
+                  <a href="#">Compare with similar items</a>
+                  <a href="#"
+                    >New (4) from <span class="price-red"> $139.99</span></a
+                  >
+                </div>
+                <p>
+                  <span class="strong-size">Note: </span>Products with
+                  electrical plugs are designed for use in the US. Outlets and
+                  voltage differ internationally and this product may require an
+                  adapter or converter for use in your destination. Please check
+                  compatibility before purchasing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mainRight">
+            <div class="wrap-top">
+              <div class="price-shipping">
+                <h2 class="price-red font-18">$193.99</h2>
+                <p class="font-14">
+                  $47.06 Shipping & Import Fees Deposit to Israel
+                  <a class="font-14" href="#">Details</a>
+                </p>
+
+                <p class="font-16">
+                  Delivery
+                  <span class="strong-size">Monday, April 25.</span>
+                  Order within <span class="green-text">20 hrs 23 mins</span>
+                </p>
+                <a href="#" class="font-12">
+                  <img
+                    src="https://m.media-amazon.com/images/S/sash/kIT-Lj9i1Bch8yi.png"
+                    alt=""
+                  />
+                  Deliver to Israel
+                </a>
+              </div>
+              <div class="stock-buttons">
+                <p class="font-18 green-text">In Stock.</p>
+                <div class="wrap-select">
+                  <label for="qty">Qty:</label>
+                  <select name="Qty" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+
+                <button type="button" class="bg-yellow">Add to Cart</button>
+                <button type="button" class="bg-orange">Buy Now</button>
+              </div>
+              <div class="secure-shipping-from">
+                <img
+                  alt=""
+                  src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/checkout/truespc/secured-ssl._CB485936932_.png"
+                  height="15px"
+                />
+                <a href="#">Secure transaction</a>
+                <div class="ship-sold-box font-12">
+                  <p>Ships from</p>
+                  <p>Amazon.com</p>
+                  <p>Sold by</p>
+                  <p>Amazon.com</p>
+                  <p>Packaging</p>
+                  <p>Shows what’s inside. T...</p>
+                </div>
+              </div>
+              <hr class="hr" />
+              <div class="policy-support font-14">
+                <a class="font-12 details">Details</a>
+                <p>
+                  Return policy:
+                  <a href="#">
+                    Eligible for Return, Refund or Replacement within 30 days of
+                    receipt
+                  </a>
+                </p>
+                <p>
+                  Support:
+                  <a href="#"> Free Amazon tech support included </a>
+                </p>
+                <input type="checkbox" name="gif" id="" />
+                <label>Add a gift receipt for easy returns</label>
+                <hr class="hr" />
+              </div>
+
+              <div class="add-to-list">
+                <button type="button">Add to List</button>
+              </div>
+            </div>
+            <div class="wrap-center">
+              <div class="news-from flex-row">
+                <a class="font-14">
+                  New (4) from <span class="price-red">$139.99</span>
+                </a>
+                <i></i>
+              </div>
+              <div class="share-social"></div>
+              <div class="others-sellers"></div>
+            </div>
+            <div class="wrap-bottom">
+              <div class="sponsored"></div>
+            </div>
+          </div>
+        </section>
+        <hr class="hr" />
+        <section id="buy-it-with">
         
-    </div>
-</body>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
-
-
